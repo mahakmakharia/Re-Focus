@@ -18,31 +18,30 @@ var quotes = new Array(
   "https://designerdev.in/wp-content/uploads/2021/01/RF-1.png"
 );
 
+var body = document.getElementById("body");
+var refresh = document.getElementById("refresh");
+var stressedButton = document.getElementById("custom-button");
+var returnButton = document.getElementById("return-button");
+
 function chooseQuote() {
   var randomNum = Math.floor(Math.random() * quotes.length);
-  document.getElementById(
-    "body"
-  ).style.backgroundImage = `url(${quotes[randomNum]})`;
+  body.style.backgroundImage = `url(${quotes[randomNum]})`;
 }
 
-var stressedButton = document.getElementById("custom-button");
-stressedButton.onclick = function () {
-  showGif();
-};
+refresh.addEventListener("click", chooseQuote);
 
-var returnButton = document.getElementById("return-button");
-returnButton.onclick = function () {
-  hideGif();
-};
+stressedButton.addEventListener("click", showPopup);
 
-function showGif() {
+returnButton.addEventListener("click", hidePopup);
+
+function showPopup() {
   var popup = document.getElementById("popup-stress");
   popup.style.display = "block";
   stressedButton.style.display = "none";
   breatheanimation();
 }
 
-function hideGif() {
+function hidePopup() {
   var popup = document.getElementById("popup-stress");
   popup.style.display = "none";
   stressedButton.style.display = "block";
