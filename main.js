@@ -1,6 +1,17 @@
 window.onload = chooseQuote;
 
 var quotes = new Array(
+  "http://designerdev.in/wp-content/uploads/2021/02/RF-26.png",
+  "http://designerdev.in/wp-content/uploads/2021/02/RF-25.png",
+  "http://designerdev.in/wp-content/uploads/2021/02/RF-24.png",
+  "http://designerdev.in/wp-content/uploads/2021/02/RF-23.png",
+  "http://designerdev.in/wp-content/uploads/2021/02/RF-22.png",
+  "http://designerdev.in/wp-content/uploads/2021/02/RF-21.png",
+  "http://designerdev.in/wp-content/uploads/2021/02/RF-20.png",
+  "http://designerdev.in/wp-content/uploads/2021/02/RF-19.png",
+  "http://designerdev.in/wp-content/uploads/2021/02/RF-18.png",
+  "http://designerdev.in/wp-content/uploads/2021/02/RF-17.png",
+  "http://designerdev.in/wp-content/uploads/2021/02/RF-16.png",
   "https://designerdev.in/wp-content/uploads/2021/01/RF-15.png",
   "https://designerdev.in/wp-content/uploads/2021/01/RF-14.png",
   "https://designerdev.in/wp-content/uploads/2021/01/RF-13.png",
