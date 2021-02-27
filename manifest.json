@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
     "name": "Re-Focus",
-    "description": "A Productivity Extension which helps you re-focus everytime you open a new tab.",
-    "version": "1.0",
+    "description": "Stay focused and motivated everytime you open a new tab!",
+    "version": "1.1",
 
     "chrome_url_overrides" : {
         "newtab": "index.html"
@@ -15,5 +15,21 @@
     "browser_action":{
         "default_popup" : "index.html",
         "default_title": "Re-Focus"   
+    },
+
+    "page_action": {
+        "default_icon": {
+          "16": "images/16x16.png",
+          "32": "images/32x32.png",
+          "48": "images/48x48.png",
+          "128": "images/128x128.png"
+        }
+    },
+      
+    "icons": {
+        "16": "images/16x16.png",
+        "32": "images/32x32.png",
+        "48": "images/48x48.png",
+        "128": "images/128x128.png"
     }
 }
